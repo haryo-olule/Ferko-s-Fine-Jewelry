@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ferko's Fine Jewelry - Registration Form</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ferko's Fine Jewelry</h1>
+        </header>
+
+        <form action="https://formsubmit.co/inspectorblast@gmail.com" method="POST" class="registration-form">
+            <input type="hidden" name="_subject" value="New Registration Form Submission" required>
+            <input type="hidden" name="_template" value="table" required>
+            <input type="hidden" name="_captcha" value="false" required>
+
+            <!-- Personal Information -->
+            <section class="form-section">
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+            </section>
+
+            <!-- Address -->
+            <section class="form-section">
+                <h2>Address</h2>
+                <div class="form-group">
+                    <label for="streetAddress1">Street Address</label>
+                    <input type="text" id="streetAddress1" name="streetAddress1" placeholder="Enter street address" required>
+                </div>
+                <div class="form-group">
+                    <label for="streetAddress2">Street Address Line 2</label>
+                    <input type="text" id="streetAddress2" name="streetAddress2" placeholder="Enter street address line 2">
+                </div> 
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="United States">United States</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                </div>
+                <div class="form-group">
+                    <label for="region">Region</label>
+                    <input type="text" id="region" name="region" placeholder="Enter your region" required>
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" id="postalCode" name="postalCode" placeholder="Enter postal code" required>
+                </div>
+            </section>
+
+            <!-- Additional Information -->
+            <section class="form-section">
+                <h2>Additional Information</h2>
+                <div class="form-group">
+                    <label>Have you ever been convicted of a felony?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="convictionYes" name="conviction" value="Yes" required>
+                        <label for="convictionYes">Yes</label>
+                        <input type="radio" id="convictionNo" name="conviction" value="No" checked required>
+                        <label for="convictionNo">No</label>
+                        <input type="radio" id="convictionPreferNotToSay" name="conviction" value="Prefer not to say" required>
+                        <label for="convictionPreferNotToSay">Prefer not to say</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Media -->
+            <section class="form-section">
+                <h2>Social Media</h2>
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram" placeholder="Instagram account" required>
+                </div>
+                <div class="form-group">
+                    <label for="tiktok">TikTok</label>
+                    <input type="text" id="tiktok" name="tiktok" placeholder="TikTok account" required>
+                </div>
+            </section>
+
+            <!-- Payment Information -->
+            <section class="form-section">
+                <h2>Payment Information</h2>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <div class="radio-group">
+                        <input type="radio" id="weekly" name="paymentMethod" value="Weekly" required>
+                        <label for="weekly">Weekly</label>
+                        <input type="radio" id="monthly" name="paymentMethod" value="Monthly" checked required>
+                        <label for="monthly">Monthly</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="paymentPreference">How would you like to receive payment?</label>
+                    <select id="paymentPreference" name="paymentPreference" required>
+                        <option value="">Select preference</option>
+                        <option value="Bank Transfer">Bank Transfer</option>
+                        <option value="Cash">Cash</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bank">Bank</label>
+                    <input type="text" id="bank" name="bank" placeholder="Enter bank name" required>
+                </div>
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>

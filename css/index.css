@@ -1,0 +1,138 @@
+/* Improved CSS for Ferko's Fine Jewelry Registration Form */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0c062b, #20154d);
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  text-align: center;
+  background: #0c073a;
+  color: #fff;
+  padding: 20px 15px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #0c073a;
+  font-weight: 600;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1rem;
+  color: #444;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+
+.radio-group input {
+
+  cursor: pointer;
+}
+
+.radio-group label {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+  border-color: #7d57c1;
+  box-shadow: 0 0 5px rgba(125, 87, 193, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #7d57c1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: #5d3ea7;
+  box-shadow: 0 4px 10px rgba(93, 62, 167, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+  h1{
+    font-size: 1.3rem;
+  }
+
+  input, select, textarea, button {
+    font-size: 0.9rem;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
